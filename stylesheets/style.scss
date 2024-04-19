@@ -1,0 +1,50 @@
+@import "normalize";
+
+@mixin alegreya-header {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body{
+  font-family: "Alegreya Sans", sans-serif;
+  background: #1b1b1b;
+  color: #fff;
+  line-height: 1.3;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0 24px;
+  max-width: 500px;
+}
+
+h1{
+  @include alegreya-header;
+  font-size: 3rem;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+h2{
+  margin: 0 0 32px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  span{
+    background-color: #343434;
+    padding: 2px 12px;
+    border-radius: 8px;
+  }
+}
+
+a{
+  color: #8ab4f8;
+}
+
+// Desktop Support
+@media screen and (min-width: 576px) {
+  body{
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
